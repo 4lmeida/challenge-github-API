@@ -35,15 +35,25 @@ a:hover {
 }
 
 .pdside40 {
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 .pdside90 {
-  padding: 0 90px;
+  padding: 0 15px;
 }
 
 .cgapi-container {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .pdside40 {
+    padding: 0 40px;
+  }
+  
+  .pdside90 {
+    padding: 0 90px;
+  }
 }
