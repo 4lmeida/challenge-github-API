@@ -33,8 +33,28 @@
     font-size: 16px;
 }
 
+.cgapi-content-card button {
+    font-size: 16px;
+    border: none;
+    background-color: var(--cgapi-color-bg-primary);
+    color: var(--cgapi-color-font-primary);
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cgpi-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
 @media(min-width: 768px) {
     .cgapi-content-card h2 {
+        font-size: 38px;
+    }
+
+    .cgpi-title {
         font-size: 38px;
     }
 }
