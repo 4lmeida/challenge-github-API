@@ -16,12 +16,11 @@ export default function Search() {
 
   function handleBtnOnClick(event: any) {
     event.preventDefault();
-    console.log(user);
+
     objectService
       .findyByUser(user)
       .then((response) => {
         setObj(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         setError(error.response.data);
