@@ -16,7 +16,7 @@ nav h1 {
     color: var(--cgapi-color-font-primary);
 }
 
-@media(min-width: 576px) {
+@media(min-width: 768px) {
   header {
     padding: 0 40px;
   }

@@ -31,6 +31,7 @@ export default function Search() {
   return (
     <main>
       <section className="pdside90">
+        
         <form>
           <div className="cgapi-container-card">
             <div className="cgapi-content-card">
@@ -40,8 +41,10 @@ export default function Search() {
                   name="user"
                   value={user}
                   type="text"
+                  autoFocus
                   placeholder="Usuário Github"
                   onChange={handleUserChange}
+                  
                 />
                 <button onClick={handleBtnOnClick} type="submit">
                   Encontrar
@@ -51,11 +54,8 @@ export default function Search() {
           </div>
         </form>
 
-        {obj ? ( 
-          <CardBriefing object={obj} />
-        ) : (
-          error && <h1 className="cgpi-title">Erro ao buscar usuário</h1>
-        )}
+        {(obj && <CardBriefing object={obj} />) ||
+          (error && <h1 className="cgpi-title">Erro ao buscar usuário</h1>)}
       </section>
     </main>
   );
